@@ -12,30 +12,224 @@ body{
 nav{
     display: flex;
     justify-content: center;
-    gap: 400px;
+    align-items: center;
+    gap: 520px;
     margin-top: 50px;
 }
 nav a{
     text-decoration: none;
-    padding-left: 50px;
+    padding-left: 65px;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(125, 127, 129);
+}
+.home{
+    color:rgb(255, 66, 23) ;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+}
+nav img{
+    height: 40px;
+    padding-right: 10px;
+}
+.tour{
+    color: rgb(255, 66, 23);
+}
+.logo-text{
+    font-size: 60px;
 }
 
 /* banner-section start -------------------------------------
 --------------------------------------------------------- */
 
 .banner-section{
+    background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 170px;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.banner-input-section {
+    background-color: rgba(252, 247, 247, 0.393);
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.banner-section h1{
+    color: white
+
+}
+.banner-section p{
+    font-weight: 400;
+    color: white;
+}
+.banner-section h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.banner-input-section input{
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    
+}
+.find-btn{
+    background-color:rgb(255, 66, 23) ;
+}
+.fa-search{
+    color: white;
+    position: relative;
+    left: 6%;
+    top: 1px;
+}
+.find-btn::placeholder{
+    color: white;
+    position: relative;
+    left: 30%;
 
 }
 
 
 
 
-
-
-
-
-
-.banner-input-section{
-    width: 20px;
-            
+/* Our Popular section----------------------------------------- */
+.popular-section {
+    display: flex; 
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 200px 0 200px;
+    font-size: large;
 }
+.popular-section-text h1{
+    font-size: xx-large;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.popular-section-text li{
+    margin: 20px 0 30px 10px;
+    color: rgb(66, 65, 69);
+    font-weight: 300;
+}
+.popular-section-text p{
+    color: rgb(66, 65, 69);
+    font-weight: 300;
+}
+.read-btn{
+    background-color:rgb(255, 66, 23) ;
+    margin-top: 35px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+
+
+/* Choose your destination part --------------------------- */
+.gallary-section{
+    margin: 30px 200px 0 200px;
+}
+.gallary{
+    flex-basis: 50%;
+    display: grid;
+    justify-content: center;
+    gap: 17px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+}
+
+.box{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+}
+#box-1{
+    grid-column: span 2;
+}
+#box-2{
+    grid-column: span 2;
+}
+
+#box-4{
+    grid-column: span 2;
+}
+#box-7{
+    grid-column: span 3;
+
+}
+
+
+
+/* WHy choose use section------------------------------------------- */
+
+.choose-use-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 200px 20px 200px;
+
+}
+
+.choose-use-section p{
+    color: rgb(52, 53, 55);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.why-choose-head{
+    text-align: center;
+
+}
+
+.why-choose-head h1{
+    font-size: 50px;
+}
+.why-choose-head p{
+    margin: 20px 400px 20px 400px;
+    
+}
+.choose-use-section img{
+   height: 60px;
+}
+
+.hotel-service{
+    display: flex;
+}
+.handPicked{
+    background-color: rgba(251, 235, 214, 0.86);
+    padding: 25px;
+    
+}
+.wordClass{
+    background-color: rgba(63, 189, 235, 0.223);
+    padding: 25px;
+}
+.offer{
+    background-color: rgba(245, 185, 163, 0.229);
+    border: 1px solid rgba(16, 16, 16, 0.229);
+    padding: 25px;
+}
+
+

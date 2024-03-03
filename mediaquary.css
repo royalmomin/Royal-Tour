@@ -1,20 +1,35 @@
 @media screen and (max-width : 600px){
+
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
     .check-btn{
         display: block;
+        margin-right: 65px;
+        /* padding-right: 50px; */
     }
     nav a{
         display: none;
-        padding-left: 2px;
+        padding-left: 1px;
     }
     
 
     nav{
         display: flex;
-        justify-content: center;
-        margin: 20px 50px 0 10px;
-        gap: 120px;
+        justify-content: space-around;
+        margin: 20px 50px 0 2px;
+        gap: 30px;
+
     
 
+    }
+
+    .nav div{
+        margin-left: 2px;
     }
     .logo-text{
         font-size: 20px;
@@ -26,11 +41,21 @@
 /* banner-section start -------------------------------------
 --------------------------------------------------------- */
 
+.banner-head-section{
+    display: flex;
+    justify-content: center;
+    margin: 1px 5px 2px 5px;
+}
 .banner-section{
     background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
-    margin-top: 0;
+    margin: 1px 1px 1px 1px;
+    padding: 1px;
+    height: 500px;
+    width: 380px;
+    gap: 10px;
+    border-radius: 20px;
     
 
 }
@@ -38,8 +63,12 @@
 .banner-input-section {
     background-color: rgba(252, 247, 247, 0.393);
     border-radius: 5px; 
-    padding: 5px; 
+    padding: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
 }
 
 
@@ -48,40 +77,326 @@
 
 }
 .banner-section p{
-    font-weight: 100;
+    font-weight: 50;
     color: white;
 }
 .banner-section h1{
-    font-size: 10px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 5px;
 }
 .banner-input-section input{
-    width: 10px;
-    padding: 10px;
+    width: 200px;
+    padding: 20px;
     border: none;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 1px;
     
 }
 
 .fa-search{
     color: white;
-    position: relative;
-    left: 6%;
-    top: 1px;
+    position: absolute;
+    left: 30%;
+    top: 260px;
 }
 .find-btn::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    left: 10%;
+
+}
+
+
+/* Our Popular section----------------------------------------- */
+.popular-section {
+    display: block; 
+    gap: 1px;
+    margin: 40px 20px 20px 20px;
+    font-size: large;
+}
+
+.popular-section-text h1{
+    font-size: xx-large;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.popular-section-text li{
+    margin: 20px 10px 30px 10px;
+    color: rgb(66, 65, 69);
+    font-weight: 300;
+}
+.popular-section-text p{
+    color: rgb(66, 65, 69);
+    font-weight: 300;
+}
+.read-btn{
+    background-color:rgb(255, 66, 23) ;
+    margin-top: 35px;
+    padding: 20px 35px 20px 35px;
+    border-radius: 5px;
+    border: none;
     color: white;
-    position: relative;
-    left: 30%;
+    font-size: x-large;
+    font-weight: bold;
+}
+.hill-image{
+    display: flex;
+    justify-content: center;
+}
+.hill-image img {
+    margin-top: 25px;
+    height: 370px;
 
 }
 
 
 
 
+/* Choose your destination part --------------------------- */
+.gallary-section{
+    margin: 50px 10px 0 10px;
+    text-align: center;
+}
+
+.gallary-section h1{
+    font-size: 25px;
+}
+.gallary{
+    display: inline-block;
+    justify-content: center;
+    gap: 2px
+
+} 
+
+
+.box{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 200px;
+    width: 380px;
+    margin-top: 20px;
+
+}
+/* #box-1{
+    grid-column: span 1;
+}
+#box-2{
+    grid-column: span 1;
+}
+
+#box-4{
+    grid-column: span 1;
+}
+#box-7{
+    grid-column: span 1;
+
+} */
 
 
 
+
+/* WHy choose use section------------------------------------------- */
+
+.choose-use-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px 20px 20px;
+
+}
+
+.choose-use-section p{
+    color: rgb(52, 53, 55);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.why-choose-head{
+    text-align: center;
+
+}
+
+.why-choose-head h1{
+    font-size: 50px;
+}
+.why-choose-head p{
+    margin: 20px 20px 20px 20px;
+    
+}
+.choose-use-section img{
+   height: 60px;
+   padding-bottom: 20px;
+}
+
+.hotel-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 630px;
+}
+.handPicked{
+    background-color: rgba(251, 235, 214, 0.86);
+    padding: 35px;
+    width: 50%;
+    border: 1px solid rgba(185, 163, 134, 0.86) ;
+    border-radius: 10px;
+    
+}
+.wordClass{
+    background-color: rgba(63, 189, 235, 0.223);
+    padding: 35px;
+    width: 50%;
+    border: 1px solid rgba(10, 145, 194, 0.77);
+    border-radius: 10px;
+}
+.offer{
+    background-color: rgba(245, 185, 163, 0.229);
+    border: 1px solid rgba(16, 16, 16, 0.229);
+    border-radius: 10px;
+    padding: 35px;
+    width: 86%;
+    margin-top: 15px;
+}
+
+
+
+
+/* See All Packages section----------------------------------------------------------- */
+
+.video-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px 20px 20px;
+    gap: 25px;
+
+}
+
+.video-section h1{
+    font-size: 30px;
+}
+.video-section p{
+    color: rgb(52, 53, 55);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.video-section li{
+    color: rgb(52, 53, 55);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+video{
+    border-radius: 10px;
+    width: 400px;
+}
+.see-btn{
+    background-color:rgb(255, 66, 23) ;
+    margin-top: 35px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+/* NewsLetter section------------------------------------------------------------ */
+
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 50px 20px 20px 20px; 
+}
+
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px 10px 10px;
+    gap: 25px;
+}
+.inputbox input{
+    padding: 10px;
+    background-color: rgba(161, 159, 159, 0.142);
+    border: none;
+    border-radius: 5px;
+}
+.inputbox button{
+    background-color: rgb(255, 66, 23) ;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 9px;
+    color: white;
+    font-weight: bold;
+}
+
+.newletter-box{
+    border: 2px solid rgb(255, 66, 23) ;
+    height: 350px;
+    width: 390px;
+    border-radius: 10px;
+}
+.travel-picture img{
+    height: 290px;
+    width: 400px;
+}
+
+
+
+
+/* Footer Section */
+
+
+footer{
+    background-color:rgba(161, 159, 159, 0.142);
+    text-align: center;
+}
+.footer-section{
+    padding: 20px;
+    margin: 40px 20px 10px 20px;
+}
+
+.footer-section p{
+    margin: 0 20px 0 20px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer-logo h1{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.icon{
+    display: none;
+}
+.icon-2 i{
+    padding: 10px;
+    size: 20px;
+}
+
+.icon-2{
+    display: block;
+}
 }
 

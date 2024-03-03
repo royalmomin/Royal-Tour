@@ -327,12 +327,12 @@ video{
 
 .newletter-box{
     border: 2px solid rgb(255, 66, 23) ;
-    height: 378px;
-    width: 680px;
+    height: 385px;
+    width: 720px;
     border-radius: 10px;
 }
 .travel-picture img{
-    height: 380px;
+    height: 390px;
 }
 
 
@@ -369,5 +369,8 @@ footer{
 }
 .icon i{
     padding: 30px;
+}
+.icon-2{
+    display: none;
 }
 
